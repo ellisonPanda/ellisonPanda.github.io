@@ -1,0 +1,305 @@
+/* Corpo da página */
+body {
+  font-family: 'Muli', sans-serif;
+  color: #ececec;
+  background-color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/img/0101.gif'); /* Caminho da sua imagem */
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-attachment: fixed; /* Faz a imagem ficar fixa ao rolar a página */
+}
+
+/* Títulos */
+h1, h2, h3 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #9b59b6; /* Roxo elegante */
+  letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2c2c2c;
+}
+
+.nav-link {
+  color: #ececec;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #9b59b6;
+}
+
+/* Botões Estilizados */
+button, .btn {
+  background-color: #9b59b6; /* Roxo escuro */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover, .btn:hover {
+  background-color: #8e44ad;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+button:active, .btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Seções do currículo */
+.resume-section {
+  padding: 40px;
+  background-color: rgba(44, 44, 44, 0.7); /* Cor com transparência */;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.resume-section-content {
+  margin-bottom: 30px;
+}
+
+.resume-section-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resume-section-content ul li {
+  margin-bottom: 12px;
+}
+
+/* Ícones sociais */
+.social-icons a {
+  margin-right: 15px;
+  color: #ececec;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #9b59b6;
+}
+
+/* Separadores */
+hr {
+  border-top: 2px solid #9b59b6;
+  margin: 30px 0;
+}
+
+/* Imagem de perfil */
+#sideNav .navbar-brand img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#sideNav .navbar-brand {
+  display: block;
+  text-align: center;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  #sideNav .navbar-brand img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .resume-section {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  #sideNav {
+    height: 100%;
+    width: 250px;
+    background-color: rgba(44, 44, 44, 0.7);
+    backdrop-filter: blur(5px);
+  }
+
+  .container-fluid {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+  }
+}
+
+/* Ajustes para os botões */
+#sideNav .text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#sideNav .text-center button {
+  width: 80%;
+  max-width: 200px;
+  margin: 5px 0;
+}
+
+#sideNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #2c2c2c;
+  padding-top: 20px;
+  padding-left: 10px;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.nav-item {
+  margin-bottom: 18px;
+}
+
+.nav-link {
+  color: #ececec;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  color: #2c2c2c;
+  background-color: #9b59b6;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+/* Lista de seções */
+ul#sections-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+ul#sections-list li {
+  margin-bottom: 18px;
+}
+
+ul#sections-list li a {
+  color: #ececec;
+  text-decoration: none;
+  display: block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul#sections-list li a:hover {
+  background-color: #9b59b6;
+  color: white;
+  transform: translateX(10px);
+}
+
+/* Ajuste para a sidebar */
+#sideNav .navbar-nav {
+  display: block;
+  width: 100%;
+}
+
+#sideNav .navbar-nav li {
+  margin-bottom: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Ícones sociais */
+.social-links a {
+  margin-right: 20px; /* Ajuste o espaçamento entre os ícones */
+  color: #ececec; /* Cor branca para os ícones */
+  transition: color 0.3s, transform 0.3s ease; /* Efeito de transição suave */
+}
+
+.social-links a:hover {
+  color: #9b59b6; /* Cor roxa no hover para destacar */
+  transform: scale(1.1); /* Aumenta o ícone no hover */
+}
+
+.social-links i {
+  transition: transform 0.3s; /* Transição suave para os ícones */
+}
+
+/* Ajuste para quando os ícones forem clicados */
+.social-links a:active {
+  transform: scale(1); /* Volta ao tamanho normal */
+}
+/* Links padrão */
+a {
+  color: #ececec; /* Cor branca suave para os links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+a:hover {
+  color: #9b59b6; /* Cor roxa quando o mouse passar sobre o link */
+}
+
+/* Links específicos para os itens de e-mail e projetos */
+.resume-section a {
+  color: #ececec; /* Cor branca suave para os links na seção */
+}
+
+.resume-section a:hover {
+  color: #9b59b6; /* Cor roxa ao passar o mouse */
+}
+
+/* Links na seção de contato */
+#contact a {
+  color: #ececec; /* Cor branca suave para os links de contato */
+}
+
+#contact a:hover {
+  color: #9b59b6; /* Cor roxa ao passar o mouse nos links de contato */
+}
+.icons-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Espaçamento entre os ícones */
+  justify-content: start; /* Alinha os ícones à esquerda, pode ser "center" ou "space-between" se preferir */
+}
+
+.icons-row img {
+  margin-bottom: 10px; /* Espaço abaixo dos ícones */
+}
